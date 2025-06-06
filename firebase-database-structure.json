@@ -1,0 +1,302 @@
+{
+  "users": {
+    "userId1": {
+      "name": "Rajesh Kumar",
+      "email": "rajesh@example.com",
+      "photoURL": "https://example.com/photo.jpg",
+      "bio": "Heritage keeper and community leader",
+      "location": "Rajasthan, India",
+      "phone": "+91 9876543210",
+      "createdAt": 1703097600000,
+      "updatedAt": 1703097600000,
+      "isVerified": true,
+      "verificationLevel": 3,
+      "postsCount": 25,
+      "likesReceived": 150,
+      "followersCount": 45,
+      "followingCount": 32,
+      "followers": ["userId2", "userId3", "userId4"],
+      "following": ["userId2", "userId5", "userId6"],
+      "wishlist": ["productId1", "productId2"],
+      "cart": [
+        {
+          "productId": "productId1",
+          "quantity": 2,
+          "addedAt": 1703097600000
+        }
+      ],
+      "orders": ["orderId1", "orderId2"]
+    },
+    "userId2": {
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "photoURL": "https://example.com/photo2.jpg",
+      "bio": "Cultural enthusiast and storyteller",
+      "location": "Gujarat, India",
+      "phone": "+91 9876543211",
+      "createdAt": 1703097600000,
+      "updatedAt": 1703097600000,
+      "isVerified": false,
+      "verificationLevel": 1,
+      "postsCount": 12,
+      "likesReceived": 89,
+      "followersCount": 23,
+      "followingCount": 18,
+      "followers": ["userId1", "userId3"],
+      "following": ["userId1", "userId4"],
+      "wishlist": [],
+      "cart": [],
+      "orders": []
+    }
+  },
+  "posts": {
+    "postId1": {
+      "id": "postId1",
+      "content": "Celebrating our rich Rajput heritage with traditional dance performance at the community center today! 🏰✨",
+      "mediaUrls": ["https://example.com/dance1.jpg", "https://example.com/dance2.jpg"],
+      "authorId": "userId1",
+      "authorName": "Rajesh Kumar",
+      "authorPhoto": "https://example.com/photo.jpg",
+      "createdAt": 1703097600000,
+      "likes": ["userId2", "userId3", "userId4"],
+      "comments": [
+        {
+          "id": "commentId1",
+          "content": "Beautiful performance! Our culture is so rich 🙏",
+          "authorId": "userId2",
+          "authorName": "Priya Sharma",
+          "authorPhoto": "https://example.com/photo2.jpg",
+          "createdAt": 1703097700000,
+          "likes": ["userId1"],
+          "replies": [
+            {
+              "id": "replyId1",
+              "content": "Thank you! We must preserve these traditions",
+              "authorId": "userId1",
+              "authorName": "Rajesh Kumar",
+              "authorPhoto": "https://example.com/photo.jpg",
+              "createdAt": 1703097800000,
+              "likes": [],
+              "replies": []
+            }
+          ]
+        }
+      ],
+      "shares": 5,
+      "type": "post"
+    }
+  },
+  "products": {
+    "productId1": {
+      "id": "productId1",
+      "title": "Traditional Rajasthani Kurta Set",
+      "description": "Authentic handcrafted Rajasthani kurta with intricate embroidery work. Perfect for festivals and cultural events.",
+      "price": 1299,
+      "originalPrice": 1999,
+      "discount": 35,
+      "images": ["https://example.com/kurta1.jpg", "https://example.com/kurta2.jpg", "https://example.com/kurta3.jpg"],
+      "category": "Traditional Wear",
+      "subcategory": "Men's Kurta",
+      "brand": "Heritage Crafts",
+      "rating": 4.5,
+      "reviewCount": 128,
+      "inStock": true,
+      "stockCount": 25,
+      "tags": ["traditional", "rajasthani", "kurta", "embroidery", "festival"],
+      "specifications": {
+        "Material": "Pure Cotton",
+        "Sleeve": "Full Sleeve",
+        "Pattern": "Embroidered",
+        "Occasion": "Festival, Wedding",
+        "Care": "Machine Wash"
+      },
+      "variants": [
+        {
+          "id": "variant1",
+          "name": "Size",
+          "value": "M",
+          "price": 1299
+        },
+        {
+          "id": "variant2",
+          "name": "Size",
+          "value": "L",
+          "price": 1299
+        },
+        {
+          "id": "variant3",
+          "name": "Size",
+          "value": "XL",
+          "price": 1399
+        }
+      ],
+      "seller": {
+        "name": "Heritage Crafts Store",
+        "rating": 4.3,
+        "id": "sellerId1"
+      },
+      "shipping": {
+        "free": true,
+        "cost": 0,
+        "estimatedDays": 5
+      },
+      "platforms": {
+        "meesho": "https://meesho.com/product/traditional-kurta",
+        "flipkart": "https://flipkart.com/traditional-kurta",
+        "amazon": "https://amazon.in/traditional-kurta"
+      },
+      "createdAt": 1703097600000,
+      "updatedAt": 1703097600000
+    }
+  },
+  "categories": {
+    "categoryId1": {
+      "id": "categoryId1",
+      "name": "Traditional Wear",
+      "icon": "👘",
+      "image": "https://example.com/traditional-wear.jpg",
+      "subcategories": ["Men's Kurta", "Women's Saree", "Kids Wear"],
+      "productCount": 156
+    },
+    "categoryId2": {
+      "id": "categoryId2",
+      "name": "Handicrafts",
+      "icon": "🎨",
+      "image": "https://example.com/handicrafts.jpg",
+      "subcategories": ["Pottery", "Paintings", "Sculptures"],
+      "productCount": 89
+    }
+  },
+  "orders": {
+    "orderId1": {
+      "id": "orderId1",
+      "userId": "userId1",
+      "products": [
+        {
+          "productId": "productId1",
+          "title": "Traditional Rajasthani Kurta Set",
+          "image": "https://example.com/kurta1.jpg",
+          "price": 1299,
+          "quantity": 1,
+          "variant": "Size: L"
+        }
+      ],
+      "totalAmount": 1299,
+      "status": "delivered",
+      "paymentMethod": "UPI",
+      "shippingAddress": {
+        "name": "Rajesh Kumar",
+        "phone": "+91 9876543210",
+        "addressLine1": "123 Heritage Street",
+        "addressLine2": "Near Palace Gate",
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "pincode": "302001",
+        "landmark": "Opposite City Palace"
+      },
+      "createdAt": 1703097600000,
+      "estimatedDelivery": 1703529600000
+    }
+  },
+  "chats": {
+    "chatId1": {
+      "id": "chatId1",
+      "type": "direct",
+      "participants": ["userId1", "userId2"],
+      "participantNames": ["Rajesh Kumar", "Priya Sharma"],
+      "participantPhotos": ["https://example.com/photo.jpg", "https://example.com/photo2.jpg"],
+      "lastMessage": "Thanks for sharing the event details!",
+      "lastMessageTime": 1703097600000,
+      "unreadCount": 0,
+      "createdAt": 1703097600000
+    }
+  },
+  "messages": {
+    "messageId1": {
+      "id": "messageId1",
+      "content": "Hello! How are the preparations for the cultural event going?",
+      "senderId": "userId1",
+      "senderName": "Rajesh Kumar",
+      "senderPhoto": "https://example.com/photo.jpg",
+      "chatId": "chatId1",
+      "createdAt": 1703097600000,
+      "read": true,
+      "type": "text",
+      "messageType": "direct"
+    }
+  },
+  "events": {
+    "eventId1": {
+      "id": "eventId1",
+      "title": "Rajput Heritage Festival 2024",
+      "description": "Annual celebration of Rajput culture, traditions, and heritage with cultural performances, food stalls, and exhibitions.",
+      "date": 1703529600000,
+      "time": "10:00 AM",
+      "location": "Community Heritage Center, Jaipur",
+      "organizer": "Rajesh Kumar",
+      "organizerId": "userId1",
+      "attendees": ["userId2", "userId3", "userId4"],
+      "maxAttendees": 500,
+      "category": "cultural",
+      "imageUrl": "https://example.com/festival.jpg",
+      "createdAt": 1703097600000,
+      "status": "upcoming"
+    }
+  },
+  "funds": {
+    "fundId1": {
+      "id": "fundId1",
+      "title": "Heritage Temple Restoration",
+      "description": "Help us restore the ancient Rajput temple that has been a symbol of our community for centuries.",
+      "targetAmount": 500000,
+      "raisedAmount": 125000,
+      "createdBy": "userId1",
+      "creatorName": "Rajesh Kumar",
+      "creatorPhoto": "https://example.com/photo.jpg",
+      "category": "Heritage Preservation",
+      "imageUrl": "https://example.com/temple.jpg",
+      "contributors": [
+        {
+          "userId": "userId2",
+          "name": "Priya Sharma",
+          "amount": 5000,
+          "date": 1703097600000
+        }
+      ],
+      "createdAt": 1703097600000,
+      "endDate": 1706745600000,
+      "status": "active"
+    }
+  },
+  "notifications": {
+    "notificationId1": {
+      "id": "notificationId1",
+      "userId": "userId1",
+      "type": "like",
+      "title": "New Like",
+      "message": "Priya Sharma liked your post",
+      "fromUser": {
+        "id": "userId2",
+        "name": "Priya Sharma",
+        "photo": "https://example.com/photo2.jpg"
+      },
+      "data": {
+        "postId": "postId1"
+      },
+      "read": false,
+      "createdAt": 1703097600000
+    }
+  },
+  "reports": {
+    "reportId1": {
+      "id": "reportId1",
+      "type": "comment",
+      "contentId": "commentId1",
+      "reportedBy": "userId3",
+      "reason": "Inappropriate content",
+      "description": "This comment contains offensive language",
+      "status": "pending",
+      "createdAt": 1703097600000
+    }
+  }
+}
